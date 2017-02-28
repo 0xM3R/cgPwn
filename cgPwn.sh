@@ -1,5 +1,5 @@
 #!/bin/bash
-# Author : Omer Coskun
+# Author : 0xM3R
 # Purpose : Cyber Grand Pwnage Box
 #################################
 HOMEDIR=~
