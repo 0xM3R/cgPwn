@@ -3,6 +3,7 @@
 
 ## Tools included
 *  Pwndbg
+*  Pwntools
 *  Binwalk
 *  Radare2 
 *  Capstone, Unicorn and Keystone Engines
@@ -13,7 +14,8 @@
 *  Intel PIN
 *  Angr
 *  rp++
-*  CLANG, LLVM, GDBMultiarch, GDBArm
+*  Native/Cross Compilation: CLANG, LLVM, GDBMultiarch, GDBArm
+*  Useful tools: htop, lynx, socat, p7zip, mc 
 
 
 ## Vagrant
