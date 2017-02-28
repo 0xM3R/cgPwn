@@ -1,4 +1,5 @@
-# cgPwn - Cyber Grand Pwnage Box  - This is a ubuntu VM tailored for hardware hacking, RE and Wargaming.
+# cgPwn - Cyber Grand Pwnage Box 
+ This is a ubuntu VM tailored for hardware hacking, RE and Wargaming.
 
 ## Tools included
 *  Pwndbg
