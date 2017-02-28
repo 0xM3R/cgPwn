@@ -32,7 +32,7 @@ vagrant ssh
 ```
 
 ## Default settings
-By default, [personal dotfiles](http://github.com/0xM3R/dotfiles) are installed onto the VM. Simply comment out the following lines in ecgPwn.sh if you don't want my settings.
+By default, [personal dotfiles](http://github.com/0xM3R/dotfiles) are installed onto the VM. Simply comment out the following lines in cgPwn.sh if you don't want my settings.
 
 ```
 # Personal config
