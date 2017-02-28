@@ -14,7 +14,7 @@
 *  Intel PIN
 *  Angr
 *  rp++
-*  Native/Cross Compilation: CLANG, LLVM, GDBMultiarch, GDBArm
+*  Compiler tools: CLANG, LLVM, GDBMultiarch, GDBArm
 *  Useful tools: htop, lynx, socat, p7zip, mc 
 
 
