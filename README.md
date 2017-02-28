@@ -17,6 +17,7 @@
 *  Compiler tools: CLANG, LLVM, GDBMultiarch, GDBArm
 *  Useful tools: htop, lynx, socat, p7zip, mc 
 
+![cgPwn Usage DEMO](https://thumbs.gfycat.com/AccomplishedPleasedBlackrhino-size_restricted.gif)
 
 ## Vagrant
 
