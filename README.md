@@ -5,13 +5,15 @@
 *  Pwndbg
 *  Binwalk
 *  Radare2 
-*  Capstone, Unicorn and Keystone Engine
+*  Capstone, Unicorn and Keystone Engines
 *  Qira Timeless Debugger
 *  AFL
-*  ROPGadget, XRop
+*  Valgrind , VGdb
+*  ROPGadget, XRop, Ropper
 *  Intel PIN
 *  Angr
 *  rp++
+*  CLANG, LLVM, GDBMultiarch, GDBArm
 
 
 ## Vagrant
