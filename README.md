@@ -10,10 +10,11 @@
 *  Qira Timeless Debugger
 *  AFL
 *  Valgrind , VGdb
-*  ROPGadget, XRop, Ropper
+*  ROPGadget, XRop, Ropper, rp++
 *  Intel PIN
 *  Angr
-*  rp++
+*  z3 
+*  frida 
 *  Compiler tools: CLANG, LLVM, GDBMultiarch, GDBArm
 *  Useful tools: htop, lynx, socat, p7zip, mc 
 <p align="center">
