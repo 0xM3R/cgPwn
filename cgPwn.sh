@@ -132,9 +132,11 @@ cd ../..
 )
 
 
-
 # Install r2pipe
 sudo -H pip install --upgrade r2pipe
+
+# Install frida
+sudo -H pip install --upgrade frida
 
 # Install ROPGadget
 cd ~/tools
