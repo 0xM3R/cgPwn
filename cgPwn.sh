@@ -166,7 +166,7 @@ sudo apt-get -y install golang
 sudo apt-get -y install stow
 cd ~
 rm .bashrc
-git clone https://github.com/0xM3R/dotfiles
+git clone --recursive https://github.com/0xM3R/dotfiles
 cd dotfiles
 chmod a+x ./install.sh
 ./install.sh
