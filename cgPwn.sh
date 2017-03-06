@@ -75,8 +75,6 @@ cd binwalk
 sudo python setup.py install
 sudo apt-get -y install squashfs-tools
 
-
-
 # Install Keystone engine with debug option
 cd ~/tools
 sudo apt-get -y install cmake
@@ -91,9 +89,11 @@ sudo python setup.py install
 sudo ldconfig
 
 #install qira timeless debugger
-cd ~/tools
-git clone https://github.com/BinaryAnalysisPlatform/qira.git
-cd qira/
+cd ~/tools 
+wget -q https://github.com/BinaryAnalysisPlatform/qira/archive/v1.2.tar.gz
+tar zxvf v1.2.tar.gz 
+rm v1.2.tar.gz 
+cd qira-1.2 
 ./install.sh
 
 #install xrop
