@@ -73,7 +73,7 @@ cd ~/tools
 git clone https://github.com/devttys0/binwalk
 cd binwalk
 sudo python setup.py install
-sudo apt-get install squashfs-tools
+sudo apt-get -y install squashfs-tools
 
 
 
