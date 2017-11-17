@@ -1,7 +1,4 @@
 #!/bin/bash
-# Author : 0xM3R
-# Purpose : Cyber Grand Pwnage Box
-#################################
 HOMEDIR=~
 
 # Updates
@@ -52,22 +49,6 @@ cd ~
 mkdir tools
 cd tools
 
-
-# pycparser for pwndbg
-sudo -H pip3 install pycparser # Use pip3 for Python3
-
-# Install pwndbg latest version 
-cd ~/tools 
-git clone --recursive https://github.com/pwndbg/pwndbg
-cd pwndbg 
-sudo ./setup.sh 
-
-# Install radare2
-cd ~/tools
-git clone https://github.com/radare/radare2
-cd radare2
-./sys/install.sh
-
 # Install binwalk
 cd ~/tools
 git clone https://github.com/devttys0/binwalk
@@ -87,22 +68,6 @@ sudo make install
 cd ../bindings/python/
 sudo python setup.py install
 sudo ldconfig
-
-#install qira timeless debugger
-cd ~/tools 
-wget -q https://github.com/BinaryAnalysisPlatform/qira/archive/v1.2.tar.gz
-tar zxvf v1.2.tar.gz 
-rm v1.2.tar.gz 
-cd qira-1.2 
-./install.sh
-
-#install xrop
-cd ~/tools
-git clone --depth 1 https://github.com/acama/xrop.git
-cd xrop
-git submodule update --init --recursive
-sudo make install
-
 
 # Install american-fuzzy-lop
 cd ~/tools
@@ -132,12 +97,6 @@ cd ../..
 )
 
 
-# Install r2pipe
-sudo -H pip install --upgrade r2pipe
-
-# Install frida
-sudo -H pip install --upgrade frida
-
 # Install ROPGadget
 cd ~/tools
 git clone https://github.com/JonathanSalwan/ROPgadget
@@ -156,26 +115,13 @@ export PATH=$PATH:$PIN_ROOT;
 #Install angr 
 sudo -H pip install angr 
 
-#Install ropper 
-sudo -H pip install ropper 
+#install vimrc
+wget https://raw.githubusercontent.com/scwuaptx/vimrc/master/install.sh
+sh Install.sh
 
-#install golang
-sudo apt-get -y install golang 
-
-# Personal config
-sudo apt-get -y install stow
-cd ~
-rm .bashrc
-git clone --recursive https://github.com/0xM3R/dotfiles
-cd dotfiles
-chmod a+x ./install.sh
-./install.sh
-
-#install rp++
-cd ~/tools
-wget -q https://github.com/downloads/0vercl0k/rp/rp-lin-x64
-    sudo install -s rp-lin-x64 /usr/bin/rp++
-rm rp-lin-x64
+#install peda-heap
+git clone git://github.com/Mipu94/peda-heap.git ~/tools/peda-heap
+echo "source ~/tools/peda-heap/peda.py" >> ~/.gdbinit
 
 # Fix locales after installing everything
 sudo locale-gen en_US.UTF-8
@@ -184,3 +130,5 @@ export LANG=en_US.UTF-8
 export LC_CTYPE=en_US.UTF-8
 export LC_ALL=en_US.UTF-8
 sudo dpkg-reconfigure locales
+
+
