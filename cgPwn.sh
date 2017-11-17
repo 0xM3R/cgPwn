@@ -15,6 +15,9 @@ sudo apt-get -y install ipython
 sudo apt-get -y install silversearcher-ag
 sudo apt-get -y install zsh
 
+# Install oh-my-zsh
+sh -c "$(curl -fsSL https://raw.github.com/robbyrussell/oh-my-zsh/master/tools/install.sh)"
+
 # Install 32 bit libs
 sudo dpkg --add-architecture i386
 sudo apt-get update
