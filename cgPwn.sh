@@ -13,6 +13,7 @@ sudo apt-get -y install unzip
 sudo apt-get -y install foremost
 sudo apt-get -y install ipython
 sudo apt-get -y install silversearcher-ag
+sudo apt-get -y install zsh
 
 # Install 32 bit libs
 sudo dpkg --add-architecture i386
