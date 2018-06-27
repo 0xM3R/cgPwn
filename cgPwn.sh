@@ -120,12 +120,13 @@ export PATH=$PATH:$PIN_ROOT;
 sudo -H pip install angr 
 
 #install vimrc
-wget https://raw.githubusercontent.com/scwuaptx/vimrc/master/install.sh
+wget https://raw.githubusercontent.com/l0kihardt/vimrc/master/install.sh
 sh Install.sh
 
-#install peda-heap
-git clone git://github.com/Mipu94/peda-heap.git ~/tools/peda-heap
-echo "source ~/tools/peda-heap/peda.py" >> ~/.gdbinit
+#install pwngdb
+cd ~/
+git clone https://github.com/scwuaptx/Pwngdb.git 
+cp ~/Pwngdb/.gdbinit ~/
 
 # Fix locales after installing everything
 sudo locale-gen en_US.UTF-8
