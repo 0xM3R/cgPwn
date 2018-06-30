@@ -119,8 +119,9 @@ export PATH=$PATH:$PIN_ROOT;
 #Install angr 
 sudo -H pip install angr 
 
-#install https://github.com/spf13/spf13-vim
-curl https://j.mp/spf13-vim3 -L > spf13-vim.sh && sh spf13-vim.sh
+#install untimate vim
+git clone --depth=1 https://github.com/amix/vimrc.git ~/.vim_runtime
+sh ~/.vim_runtime/install_awesome_vimrc.sh
 
 #install pwngdb
 cd ~/
