@@ -122,6 +122,9 @@ sudo -H pip install angr
 #install untimate vim
 git clone --depth=1 https://github.com/amix/vimrc.git ~/.vim_runtime
 sh ~/.vim_runtime/install_awesome_vimrc.sh
+rm /home/vagrant/.vim_runtime/sources_non_forked/vim-snippets/snippets/python.snippests
+cd /home/vagrant/.vim_runtime/sources_non_forked/vim-snippets/snippets
+wget https://raw.githubusercontent.com/l0kihardt/vimrc/master/snippets/python.snippests
 
 #install pwngdb
 cd ~/
