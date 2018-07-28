@@ -129,6 +129,10 @@ git clone https://github.com/vim-scripts/AutoComplPop
 rm /home/vagrant/.vim_runtime/sources_non_forked/vim-snippets/snippets/python.snippets
 cd /home/vagrant/.vim_runtime/sources_non_forked/vim-snippets/snippets
 wget https://raw.githubusercontent.com/l0kihardt/vimrc/master/snippets/python.snippets
+
+#remove not useful plugin
+rm -rf /home/vagrant/.vim_runtime/sources_non_forked/comfortable-motion.vim/
+
 # remember to do this after install
 #:set ts=4
 #:set noexpandtab
