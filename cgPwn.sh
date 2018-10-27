@@ -102,6 +102,7 @@ cd ../..
 
 
 # Install ROPGadget
+sudo apt install -y python-capstone
 cd ~/tools
 git clone https://github.com/JonathanSalwan/ROPgadget
 cd ROPgadget
