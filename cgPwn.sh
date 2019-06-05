@@ -124,14 +124,14 @@ git clone --depth=1 https://github.com/amix/vimrc.git ~/.vim_runtime
 sh ~/.vim_runtime/install_awesome_vimrc.sh
 
 #setup vim
-cd /home/vagrant/.vim_runtime/sources_non_forked
+cd ~/.vim_runtime/sources_non_forked
 git clone https://github.com/vim-scripts/AutoComplPop
-rm /home/vagrant/.vim_runtime/sources_non_forked/vim-snippets/snippets/python.snippets
-cd /home/vagrant/.vim_runtime/sources_non_forked/vim-snippets/snippets
+rm ~/.vim_runtime/sources_non_forked/vim-snippets/snippets/python.snippets
+cd ~/.vim_runtime/sources_non_forked/vim-snippets/snippets
 wget https://raw.githubusercontent.com/l0kihardt/vimrc/master/snippets/python.snippets
 
 #remove not useful plugin
-rm -rf /home/vagrant/.vim_runtime/sources_non_forked/comfortable-motion.vim/
+rm -rf ~/.vim_runtime/sources_non_forked/comfortable-motion.vim/
 
 # remember to do this after install
 #:set ts=4
