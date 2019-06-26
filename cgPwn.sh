@@ -137,6 +137,7 @@ rm -rf ~/.vim_runtime/sources_non_forked/comfortable-motion.vim/
 #:set ts=4
 #:set noexpandtab
 #:%retab!
+#:set foldlevelstart=99
 
 #install pwngdb
 cd ~/
