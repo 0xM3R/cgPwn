@@ -139,11 +139,9 @@ rm -rf ~/.vim_runtime/sources_non_forked/comfortable-motion.vim/
 #:%retab!
 #:set foldlevelstart=99
 
-#install pwngdb
-cd ~/
-git clone https://github.com/longld/peda
-git clone https://github.com/scwuaptx/Pwngdb.git 
-cp ~/Pwngdb/.gdbinit ~/
+#install gef
+wget -O ~/.gdbinit-gef.py -q https://github.com/hugsy/gef/raw/master/gef.py
+echo source ~/.gdbinit-gef.py >> ~/.gdbinit
 
 # Fix locales after installing everything
 sudo locale-gen en_US.UTF-8
