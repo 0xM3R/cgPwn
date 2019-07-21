@@ -31,9 +31,6 @@ sudo apt-get -y install gcc-arm-linux-gnueabihf # for the arm toolchain
 sudo sed -i 's/kernel.yama.ptrace_scope = 1/kernel.yama.ptrace_scope = 0/g' /etc/sysctl.d/10-ptrace.conf
 sudo sysctl --system
 
-# Fix urllib3 InsecurePlatformWarning
-sudo -H pip install --upgrade urllib3[secure]
-
 # Fix warning when loading .gdbinit files
 echo 'set auto-load safe-path /' > ~/.gdbinit
 
@@ -41,6 +38,9 @@ echo 'set auto-load safe-path /' > ~/.gdbinit
 sudo apt-get -y install python2.7 python-pip python-dev git libssl-dev libffi-dev build-essential
 sudo -H pip install --upgrade pip
 sudo -H pip install --upgrade git+https://github.com/Gallopsled/pwntools
+
+# Fix urllib3 InsecurePlatformWarning
+sudo -H pip install --upgrade urllib3[secure]
 
 #install some useful system tools
 sudo apt-get -y install htop
